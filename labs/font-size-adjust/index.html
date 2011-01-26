@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CSS font-size-adjust - Siku-Siku.com</title>
+<style type="text/css" rel="stylesheet">
+p {
+	margin: 20px 0;
+	font-family: Arial;
+	font-size: 300px;
+	text-align: center;
+}
+span {
+	border: 1px solid #910024;
+}
+.adjust {
+	font-size-adjust: 0.525;	/* This is the aspect value. */
+	/* The aspect value for Helvetica is 0.53; Lucida Grande 0.536. */ 
+}
+</style>
+</head>
+<body>
+<p><span>b</span><span class="adjust">b</span></p>
+<p><span>p</span><span class="adjust">p</span></p>
+<p><span>q</span><span class="adjust">q</span></p>
+</body>
+</html>
