@@ -66,6 +66,23 @@ body, p, h1, h2, h3, h4, h5, h6 {
 	letter-spacing: 0.02em;
 }
 
+body.main {
+	background: transparent url(/images/bg-main.v2.png) repeat 0 0;
+}
+
+p {
+	font-size: 14px;
+	line-height: 1.2em;
+}
+
+strong.ss {
+	padding: 0 3px;
+	background-color: #fdf7f9;
+	font-family: "Monaco", monospace;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
 a.red {
 	color: #910024;
 	text-decoration: none;
@@ -101,7 +118,7 @@ a.redbox {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: #910024;
+	background-color: #fff;
 	z-index: 999;
 }
 
@@ -145,7 +162,204 @@ a.redbox {
 	#teaser iframe.fblike {
 		left: 495px;
 	}
+
+div#ss_header {
+	margin: 0 auto 20px;
+	width: 970px;
+}
+
+	div#ss_header div#logo {
+		float: right;
+		border: 1px solid #efefef;
+		border-top: none;
+		padding: 15px 10px 10px;
+		background-color: #fff;
+	}
+
+div#ss_body {
+	margin: 0 auto;
+	width: 950px;
+}
+
+div#ss_body.index {
+	margin-bottom: 20px;
+	width: 970px;
+}
+
+	div#ss_body.index h1 {
+		font-size: 24px;
+	}
 	
+	div#ss_body.index p {
+		margin-bottom: 20px;
+		line-height: 1.4em;
+	}
+	
+		div#ss_body h1 span,
+		div#ss_body p span {
+			display: inline-block;
+			background-color: #fff;
+			color: #888;
+		}
+		
+		div#ss_body h1 span {
+			padding: 8px 10px;
+		}
+		
+		div#ss_body p span {
+			padding: 3px 10px;
+		}
+
+div#ss_social {
+	margin: 20px 0 0;
+}
+
+div.ss_social {
+	position: relative;
+	margin: 0 auto;
+	width: 950px;
+	height: 25px;
+}
+
+	div.ss_social iframe {
+		position: absolute;
+	}
+
+	div.ss_social iframe.twitter-share-button {
+		left: 367px; 
+	}
+	
+	div.ss_social iframe.fblike {
+		left: 487px;
+	}
+
+div#ss_footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #910024;
+}
+
+	div#ss_footer p {
+		margin: 0 auto;
+		width: 950px;
+		color: #fff;
+		font-size: 11px;
+		line-height: 22px;
+		text-align: right;
+		text-transform: uppercase;
+	}
+	
+	div#ss_footer a {
+		padding: 0 2px;
+		color: #fff;
+		text-decoration: underline;
+	}
+	
+	div#ss_footer a:hover {
+		background-color: #fff;
+		color: #910024;
+		text-decoration: none;
+	}
+	
+div#ss_showcase {
+	padding: 25px 0;
+	width: 100%;
+	background: transparent url(/images/bg-showcase.png) repeat 0 0;
+}
+
+div.showcase {
+	position: relative;
+	margin: 0 auto;
+	width: 955px;	/* This is a bit challenging to set the perfect width, due to the drop shadow. */
+	height: 260px;
+}
+
+	div.showcase div.wrapper {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	
+	div.showcase ul {
+		width: 3000px;
+	}
+	
+	div.showcase li {
+		position: relative;
+		float: left;
+		display: block;
+		margin: 0 29px 0 0;
+		padding: 8px;
+		background-color: #fff;
+		-moz-box-shadow: 1px 1px 2px #bbb;
+		-webkit-box-shadow: 1px 1px 2px #bbb;
+	}
+	
+		div.showcase li img.highlight {
+			position: absolute;
+			top: 8px;
+			left: 8px;
+		}
+	
+		div.showcase li div {
+			margin: 8px 0 0;		/* = padding of 'div.showcase li' */
+			height: 30px;
+			text-align: right;
+		}
+		
+			div.showcase li div h3,
+			div.showcase li div p {
+				margin: 0;
+				line-height: 1.2em;
+			}
+		
+			div.showcase li div h3 {
+				margin: 0 0 1px;
+				color: #555;
+				font-size: 14px;
+				text-transform: uppercase;
+			}
+			
+			div.showcase li div p {
+				color: #777;
+				font-size: 12px;
+				font-style: italic;
+			}
+			
+	div.showcase a.btn {
+		position: absolute;
+		top: 90px;
+		display: block;
+		width: 20px;
+		height: 20px;
+		background: transparent none no-repeat 0 0;
+		-moz-box-shadow: 0 1px 3px #888;
+		-webkit-box-shadow: 0 1px 3px #888;
+		text-decoration: none;
+		text-indent: -99999px;
+	}
+	
+	div.showcase a.btn:hover {
+		background-position: 0 -20px;
+	}
+	
+	div.showcase a.btn.disabled,
+	div.showcase a.btn.disabled:hover {
+		background-position: 0 -40px;
+		cursor: default;
+	}
+	
+	div.showcase a.btn.prev {
+		left: -40px;
+		background-image: url(/images/btn-left.sprite.v2.png);
+	}
+	
+	div.showcase a.btn.next {
+		right: -40px;
+		background-image: url(/images/btn-right.sprite.png);
+	}
+
 /** ==================================================
   * Blog
   * ================================================== */
