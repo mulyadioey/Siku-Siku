@@ -260,6 +260,10 @@ div#ss_footer {
 		text-transform: uppercase;
 	}
 	
+		div#ss_footer p span {
+			float: left;
+		}
+	
 	div#ss_footer a {
 		padding: 0 2px;
 		color: #fff;
