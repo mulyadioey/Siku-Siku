@@ -1,3 +1,81 @@
+$.fn.createSlideshow = function() {
+	return this.each(function() {
+		var rotateNow = true,
+			timerId = null,
+			$panel = $(this);
+		$panel.find('img').hide().filter(":first").show();
+		
+		// Create and configure slideshow controls.
+		var numPics = $panel.find("img").length;
+		var $control = $("<div></div>").addClass("control");
+		for (var i = 1; i <= numPics; i++) {
+			var $link = $("<a></a>").addClass("moss_link").html("0" + i).attr({ 
+							id: function() { return "moss_link-" + i }, 
+							href: "javascript:void(0);"
+						});
+			if (i == 1) { $link.addClass("selected"); }
+			$control.append($link);
+		}
+		var $playButton = $("<a></a>").attr({ 
+								id: "moss_play",
+								href: "javascript:void(0);",
+								title: "Stop slideshow."
+							}).addClass("playing").click(function() {
+								if ($(this).hasClass("playing")) {
+									// Slideshow is playing; we're going to stop it.
+									$(this).removeClass("playing").attr({ title: "Play slideshow." });
+									rotateNow = false;
+									if (timerId != null) { clearTimeout(timerId); }
+								}
+								else {
+									// Slideshow is not playing; we're going to start it.
+									$(this).addClass("playing").attr({ title: "Stop slideshow." });
+									rotateNow = true;
+									rotateNext();
+								}
+							}).appendTo($control);
+		$panel.append($control);
+		
+		/* Slidehow link handler. */
+		$panel.find(".moss_link").click(function() {
+			if ($(this).attr("id") == $(".moss_link.selected").attr("id")) { return false; }
+			
+			$(".moss_link.selected").removeClass("selected");
+			$(this).addClass("selected");
+			var id = $(this).attr("id");
+			var num = /-(\d)/.exec(id);
+			$(".moss_img:visible").fadeOut(function() {
+				$("#moss_img-" + num[1]).fadeIn();
+			});
+		});
+		
+		// Start rotation.
+		rotateNext();
+		function rotateNext() {
+			var $current = $panel.find('img:visible'),
+				$next = $current.next();
+			if ($next.length == 0) {
+				$next = $panel.find("img:first");
+			}
+			timerId = setTimeout(function() {
+				$current.fadeOut(function() {
+					// Update selected link.
+					var id = $next.attr("id");
+					var num = /-(\d)/.exec(id);
+					$(".moss_link").removeClass("selected");
+					$("#moss_link-" + num[1]).addClass("selected");
+					
+					$next.fadeIn(function() {	
+						if (rotateNow) {
+							rotateNext();
+						}
+					});	
+				});
+			}, 3000);
+		}
+	});
+}
+
 $(function() {
 	$("#curtain").fadeOut(2500);
 	
@@ -50,4 +128,7 @@ $(function() {
 			$("div.showcase a.next").tipsy("hide");
 		}, 3000);
 	}, 15000);
+	
+	/* Animate slideshow. */
+	$(".slideshow").createSlideshow();
 });
