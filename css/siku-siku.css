@@ -253,6 +253,8 @@ div#ss_body.detail {
 	box-shadow: 1px 1px 5px #bfbfbf;
 	-moz-box-shadow: 1px 1px 5px #bfbfbf;
 	-webkit-box-shadow: 1px 1px 5px #bfbfbf;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color=#bfbfbf,direction=120,strength=2)";		/* IE8+. */  
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#bfbfbf,direction=120,strength=2); 			/* IE7 and lower. */  
 }
 
 	div#ss_body .detail_l {
@@ -937,6 +939,7 @@ div.slideshow {
 		float: right;
 		width: 160px;
 		padding: 0 0 1px;
+		padding-bottom/*\**/: 2px\9;	/* IE7 and 8. */
 		border-bottom: 1px solid #ddd;
 	}
 	
