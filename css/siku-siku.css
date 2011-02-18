@@ -477,14 +477,14 @@ div.showcase {
 		
 			div.showcase li div h3 {
 				margin: 0 0 2px;
-				color: #777;
+				color: #555;
 				font: bold 12px/1.2em 'Tex-bold', Helvetica, "Segoe UI", Arial, Verdana;
 				text-transform: uppercase;
 			}
 			
 			div.showcase li div p {
 				margin: 0;
-				color: #777;
+				color: #888;
 				font: normal 12px/1.2em 'Tex', Helvetica, "Segoe UI", Arial, Verdana;
 			}
 			
