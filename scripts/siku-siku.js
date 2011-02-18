@@ -77,7 +77,12 @@ $.fn.createSlideshow = function() {
 }
 
 $(function() {
-	$("#curtain").fadeOut(2500);
+	var curtainTime = 2000;
+	var matched = /source=internal/.exec(window.location);
+	if (matched) {		/* i.e. No special URL parameter. */
+		curtainTime = 0;
+	}
+	$("#curtain").fadeOut(curtainTime);
 	
 	/* Showcase handler. */
 	var displayShowcase = 4;
