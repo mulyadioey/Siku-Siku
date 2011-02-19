@@ -304,15 +304,14 @@ div.detail_box {
 	div.detail_box a:active,
 	div.detail_box a:link,
 	div.detail_box a:visited {
-		padding: 0 2px;
+		padding: 0 17px 0 0;
+		background: transparent url(/images/external_link.gif) no-repeat right 0;
 		color: #666;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 	
 	div.detail_box a:hover {
-		color: #fff;
-		background-color: #666;
-		text-decoration: none;
+		color: #999;
 	}
 	
 div.detail_box2_w {
