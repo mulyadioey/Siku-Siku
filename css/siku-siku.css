@@ -93,8 +93,6 @@ p {
 }
 
 strong.ss {
-	padding: 0 3px;
-	background-color: #fdf7f9;
 	font-family: "Monaco", monospace;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -217,16 +215,20 @@ div#ss_body.index {
 	margin-bottom: 20px;
 	width: 970px;
 }
-
+	
+	div#ss_body.index h1,
+	div#ss_body.index p {
+		margin-bottom: 2px;
+	}
+	
 	div#ss_body.index h1 {
 		font-size: 20px;
 	}
 	
 	div#ss_body.index p {
-		margin-bottom: 20px;
-		line-height: 1.4em;
+		line-height: 1.5em;
 	}
-	
+
 		div#ss_body h1 span,
 		div#ss_body p span {
 			display: inline-block;
@@ -511,12 +513,12 @@ div.showcase {
 	}
 	
 	div.showcase a.btn.prev {
-		left: -40px;
+		left: -30px;
 		background-image: url(/images/btn-left.sprite.v2.png);
 	}
 	
 	div.showcase a.btn.next {
-		right: -40px;
+		right: -30px;
 		background-image: url(/images/btn-right.sprite.png);
 	}
 
