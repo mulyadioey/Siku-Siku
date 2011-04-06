@@ -90,9 +90,9 @@ a.btn-blue.sm {
 
 	.box .border1 {
     	position: absolute;
-    	top: -7px;
+    	top: -10px;
 		left: 0;
-		padding-bottom: 14px;
+		padding-bottom: 20px;
     	width: 100%;
     	height: 100%;
     	background-color: #000;
@@ -102,8 +102,8 @@ a.btn-blue.sm {
 	
 	.box .border2 {
     	position: absolute;
-    	margin-left: -7px;
-    	padding-left: 14px;
+    	margin-left: -10px;
+    	padding-left: 20px;
 		width: 100%;
    		height: 100%;
 		background-color: #000;
@@ -113,38 +113,38 @@ a.btn-blue.sm {
 	
 	.box .topleft {
 		position: absolute;
-		top: -7px;
-		left: -7px;
-	    width: 7px;
-	    height: 7px;
-	    background: transparent url("images/topleft.png") no-repeat 0 0;
+		top: -10px;
+		left: -10px;
+	    width: 10px;
+	    height: 10px;
+	    background: transparent url("images/topleft.v2.png") no-repeat 0 0;
 	}
 
 	.box .topright {
 		position: absolute;
-		top: -7px;
-		right: -7px;
-	    width: 7px;
-	    height: 7px;
-    	background: transparent url("images/topright.png") no-repeat 0 0;
+		top: -10px;
+		right: -10px;
+	    width: 10px;
+	    height: 10px;
+    	background: transparent url("images/topright.v2.png") no-repeat 0 0;
 	}
 	
 	.box .bottomright {
     	position: absolute;
-	    right: -7px;
-	    bottom: -7px;
-	    width: 7px;
-    	height: 7px;
-    	background: transparent url("images/bottomright.png") no-repeat 0 0;
+	    right: -10px;
+	    bottom: -10px;
+	    width: 10px;
+    	height: 10px;
+    	background: transparent url("images/bottomright.v2.png") no-repeat 0 0;
 	}
 	
 	.box .bottomleft {
 	    position: absolute;
-	    bottom: -7px;
-        left: -7px;
-		width: 7px;
-	    height: 7px;
-	    background: transparent url("images/bottomleft.png") no-repeat 0 0;
+	    bottom: -10px;
+        left: -10px;
+		width: 10px;
+	    height: 10px;
+	    background: transparent url("images/bottomleft.v2.png") no-repeat 0 0;
 	    background-position: bottom right;
 	    background-repeat: no-repeat;
 	}
@@ -163,7 +163,7 @@ a.btn-blue.sm {
 		
 		.box .content p,
 		.box .content h2 {
-			color: #333;
+			color: #292929;
 		}
 	
 		.box .content p {
@@ -224,11 +224,11 @@ a.btn-blue.sm {
 		
 	.box .arrows {
 		position: absolute;
-		top: -19px;
+		top: -22px;
 		left: 30px;
 		width: 21px;
 		height: 12px;
-		background: transparent url("images/arrow.png") no-repeat 0 0;
+		background: transparent url("images/arrow.v2.png") no-repeat 0 0;
 	}
 	
 	.box .arrows.center {
@@ -238,10 +238,10 @@ a.btn-blue.sm {
 	.box .arrowsside {
     	position: absolute;
     	top: 10%;
-    	left: -19px;
+    	left: -22px;
     	width: 12px;
     	height: 21px;
-    	background: transparent url("images/arrow2.png") no-repeat 0 0;
+    	background: transparent url("images/arrow2.v2.png") no-repeat 0 0;
     }
 	
 	.box .arrowsside.center {
