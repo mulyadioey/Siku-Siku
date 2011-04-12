@@ -148,6 +148,52 @@ a.btn-blue.sm {
 	    background-position: bottom right;
 	    background-repeat: no-repeat;
 	}
+	
+	/* 'thin' class. */
+	.box.thin .border1 {
+		top: -9px;
+		padding-bottom: 18px;
+	}
+	
+	.box.thin .border2 {
+    	margin-left: -9px;
+    	padding-left: 18px;
+	}
+	
+	.box.thin .topleft {
+		position: absolute;
+		top: -9px;
+		left: -9px;
+	    width: 9px;
+	    height: 9px;
+	    background: transparent url("images/topleft.v3.png") no-repeat 0 0;
+	}
+	
+	.box.thin .topright {
+		position: absolute;
+		top: -9px;
+		right: -9px;
+	    width: 9px;
+	    height: 9px;
+    	background: transparent url("images/topright.v3.png") no-repeat 0 0;
+	}
+	
+	.box.thin .bottomright {
+    	right: -9px;
+	    bottom: -9px;
+	    width: 9px;
+    	height: 9px;
+    	background: transparent url("images/bottomright.v3.png") no-repeat 0 0;
+	}
+	
+	.box.thin .bottomleft {
+	    bottom: -9px;
+        left: -9px;
+		width: 9px;
+	    height: 9px;
+	    background: transparent url("images/bottomleft.v3.png") no-repeat 0 0;
+	}
+	/* [end] 'thin' class. */
 
 	.box .content {
     	position: relative;
