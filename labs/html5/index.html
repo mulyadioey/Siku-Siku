@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>HTML 5 and jQuery</title>
+<style type="text/css">
+#my_canvas {
+	border: 1px dotted #000;
+}
+</style>
+<script type="text/javascript" src="/scripts/jquery.latest.js"></script>
+<script type="text/javascript">
+$(function() {
+	// <canvas> doesn't work with selecting the DOM element by jQuery.
+	// var canvas = $("#my_canvas");
+	// var image = $("#my_image");
+	var canvas = document.getElementById("my_canvas");
+	var image = document.getElementById("my_image");
+	var context = canvas.getContext("2d");
+	
+	// You need to wait until the image is fully loaded (on Chrome and Safari).
+	image.onload = function() {
+		context.drawImage(image, 0, 0);
+	};
+});
+</script>
+</head>
+<body>
+<canvas id="my_canvas" width="250" height="250">
+	Sorry, your browser doesn't support Canvas.
+</canvas>
+<img id="my_image" src="/images/siku-siku.jpg" alt="Siku-Siku logo" />
+</body>
+</html>
