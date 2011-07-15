@@ -1,0 +1,169 @@
+/** --------------------------------------------------
+  * Hacks
+  * -------------------------------------------------- */
+.clearfix:after {   /* fixes FF (applies background color regardless of height of left content or sidebar) */
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix { display: inline-block; }
+
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+
+@font-face {
+	font-family: "Lobster";
+	src: url(/plugins/font/lobster/lobster_1.3.otf);
+}
+
+@font-face {
+	font-family: "League Gothic";
+	src: url(/plugins/font/league-gothic/league_gothic.otf);
+}
+
+body, h1, h2, p, ul {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	line-height: 1.4em;
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	background: transparent url(/ext/dribbble/images/bg.png) repeat 0 0;
+	color: #292929;
+	font: normal 62.5%/1.4em "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-shadow: 0 1px #fff;
+}
+
+a, a:active, a:link, a:visited {
+	color: #ea95aa;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a.social {
+	display: inline-block;
+	width: 54px;
+	height: 54px;
+	background: transparent url(/ext/dribbble/images/social_icons.sprite.png) no-repeat 0 0;
+	text-indent: -99999px;
+}
+
+	a.social.twitter { background-position: 0 0; }
+	a.social.twitter:hover { background-position: 0 -100px; }
+	a.social.dribbble { background-position: 0 -200px; }
+	a.social.dribbble:hover { background-position: 0 -300px; }
+	a.social.linkedin { background-position: 0 -400px; }
+	a.social.linkedin:hover { background-position: 0 -500px; }
+
+ul.social_list {}
+
+	ul.social_list li {
+		float: left;
+		margin-right: 5px;
+	}
+
+#main_ctnr {
+	margin: 25px 0;
+	width: 100%;
+}
+
+#header_ctnr {
+	margin: 0 auto;
+	width: 800px;
+}
+
+#header_ctnr h1,
+#header_ctnr h2 {
+	margin: 0 0 0.2em;
+	line-height: 1em;
+	font-weight: normal;
+	text-align: center;
+}
+
+#header_ctnr h1 {
+	font-family: "Lobster", Arial, sans-serif;
+	font-size: 5.5em;
+}
+
+#header_ctnr h2 {
+	color: #ea95aa;
+	font-size: 3.5em;
+	font-family: "League Gothic";
+}
+
+#content_ctnr {
+	margin: 30px 0 20px;
+	border-top: 1px solid #efefef;
+	border-bottom: 1px solid #efefef;
+	padding: 20px 0;
+	background: transparent url(/ext/dribbble/images/bg-content.png) repeat 0 0;
+}
+
+#content_wrapper {
+	margin: 0 auto;
+	width: 800px;
+}
+
+#sidebar_ctnr {
+	float: left;
+	margin: 5px 0 0;
+	width: 325px;
+}
+
+	#sidebar_ctnr > div {
+		margin: 0 0 25px;
+	}
+
+	#sidebar_ctnr h2 {
+		margin: 0 0 0.5em;
+		font-size: 2.5em;
+		font-family: "League Gothic", Arial, sans-serif;
+		line-height: 1em;
+	}
+	
+	#sidebar_ctnr p {
+		margin: 0 0 1em;
+		font-size: 1.4em;
+	}
+
+#gallery_ctnr {
+	float: right;
+	width: 442px;
+}
+
+.shot_ctnr {
+	margin: 0 0 20px;
+	padding: 0 0 15px;
+	background: transparent url(/ext/dribbble/images/bg-shot_shadow.png) no-repeat 0 bottom;
+}
+
+.shot_box {
+	border: 1px solid #e5e5e5;
+	padding: 20px;
+	background-color: #fff;
+	width: 400px;
+	height: 300px;
+}
+
+#footer_ctnr {}
+
+	#footer_ctnr p {
+		color: #999;
+		font-size: 1.3em;
+		text-align: center;
+	}
+	
