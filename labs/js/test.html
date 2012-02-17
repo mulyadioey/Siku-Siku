@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="/scripts/jquery.latest.js"></script>
+<script type="text/javascript">
+$(function() {
+	$.get("test.php", function(data) {
+		console.log(data.full_name[1]); // Prints "Siku-Siku.com".
+	}, "json");
+});
+</script>
+</head>
+<body>
+<p id="hello">Hello</p>
+</body>
+</html>

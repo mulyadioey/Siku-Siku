@@ -660,7 +660,7 @@ div.blog_post {
 		}
 	
 	.blog_post h2 {
-		margin: 0 0 1px;
+		margin: 0 0 0.5em;
 		font-size: 16px;
 		line-height: 1.4em;
 	}
