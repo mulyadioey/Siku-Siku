@@ -16,13 +16,18 @@ body.jobs h2 {
   margin: 0 0 3px;
   font-weight: 300;
 }
-body.jobs ol {
+body.jobs ol,
+body.jobs ul {
   margin-left: 50px;
 }
 body.jobs p,
 body.jobs li {
   font-size: 16px;
   line-height: 24px;
+}
+body.jobs p#breadcrumb {
+  font-size: 14px;
+  line-height: 20px;
 }
 body.jobs li {
   margin: 0 0 4px;
