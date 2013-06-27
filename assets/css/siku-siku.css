@@ -1,0 +1,98 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ul {
+  margin: 0;
+}
+body {
+  margin: 0 0 0 8%;
+  background: transparent url(/assets/img/dark-geometric.png) repeat 0 0;
+  font-family: 'Gilda Display', serif;
+  font-size: 62.5%;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-transform: none;
+  text-decoration: none;
+  word-spacing: 0em;
+}
+[role=document] {
+  padding-left: 2rem;
+  background-color: #fff;
+}
+h1,
+h2,
+p {
+  color: #333;
+}
+h1 {
+  margin: 0 0 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+p {
+  margin: 0 0 .8rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+a {
+  text-decoration: none;
+}
+header {
+  *zoom: 1;
+  padding: 0 0 2rem;
+}
+header:before,
+header:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+header:after {
+  clear: both;
+}
+header #logo {
+  float: left;
+  position: relative;
+  top: -8px;
+}
+header nav {
+  float: left;
+  margin: 70px 0 0 1.5rem;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav li {
+  float: left;
+  margin-right: 2rem;
+  font-size: 1.6rem;
+}
+header nav li a {
+  color: #333;
+}
