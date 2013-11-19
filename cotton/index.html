@@ -16,8 +16,9 @@
 	<link rel="stylesheet" href="css/bootstrap.css" />
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/custom.css" />
 	<!-- FONTS -->
-	<link href='http://fonts.googleapis.com/css?family=Cabin:400,700,400italic|Merriweather:900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 	<script src="js/custom.modernizr.js"></script>
 
 </head>
@@ -28,14 +29,15 @@
 	
 		<!-- START HEADER -->
 		<header id="header" class="smooth">
+            <div id="intro-overlay"></div>
 			<div class="row">
 				<div class="col-xs-12">
 					<div id="intro" class="text-container">
 						<div id="logo">
-							<img src="images/logo.svg" alt="logo" />
+							<img src="images/logo-siku-siku.png" alt="logo" />
 						</div>
-						<h1>Welcome to our digital place.</h1>
-						<h2>Make yourself at home.</h2>
+						<h1>Welcome to Siku-Siku home.</h1>
+						<h2>We are a web design &amp; engineering studio.</h2>
 						<div id="explore"><a class="scroll" href="#team"><i class="icon-angle-down icon-4x"></i></a></div>
 					</div>
 				</div>
@@ -49,7 +51,7 @@
 				<div class="row">
 					<div class="col-md-4">
 						<div id="logo-lettering" >
-							<a class="scroll" href="#header"><img src="images/logo_lettering.svg" alt="Logo Lettering"/></a>
+							<a class="scroll" href="#header"><img src="images/logo-nav.png" alt="Siku-Siku logo"/></a>
 						</div>
 						<!-- the hidden classes of the official release are no accumlative. that's why we used the @TurchenkoAlex ones.  
 						https://github.com/TurchenkoAlex/bootstrap/tree/3.0.0-wip/dist/css -->
@@ -388,8 +390,8 @@
 		<section id="feed">
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 col-sm-offset-3 intro">
-					<h2>Social feeder.</h2>
-					<p>We're in more than one place at a time.</p>
+					<h1>Our clients.</h1>
+					<p>Some companies / products we&rsquo;ve been priviledged to be part of.</p>
 				</div>
 			</div>
 
@@ -404,7 +406,46 @@
 					</div>
 			
 			</div>
-			<!-- START FLICKR FEED -->
+
+            <div id="flickr" class="row feed">
+                <div class="col-xs-3 col-sm-2">
+                    <a href="">
+                        <img src="images/client-eyefi.png" />
+                    </a>
+                </div>
+                <div class="col-xs-3 col-sm-2">
+                    <a href="">
+                        <img src="images/client-relayrides.png" />
+                    </a>
+                </div>
+                <div class="col-xs-3 col-sm-2">
+                    <a href="">
+                        <img src="images/client-sugarsync.png" />
+                    </a>
+                </div>
+                <div class="col-xs-3 col-sm-2">
+                    <a href="">
+                        <img src="images/client-marvell.png" />
+                    </a>
+                </div>
+                <div class="col-xs-3 col-sm-2">
+                    <a href="">
+                        <img src="images/client-17feet.png" />
+                    </a>
+                </div>
+                <div class="col-xs-3 col-sm-2">
+                    <a href="">
+                        <img src="images/client-sugarcrm.png" />
+                    </a>
+                </div>
+                <div class="col-xs-3 col-sm-2">
+                    <a href="">
+                        <img src="images/client-savvysource.png" />
+                    </a>
+                </div>
+            </div>
+
+            <!-- START FLICKR FEED -->
 			<div id="flickr" class="row feed"></div>
 			<!-- END TWITTER FEED -->
 

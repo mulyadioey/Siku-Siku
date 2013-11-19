@@ -1,0 +1,41 @@
+body {
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+#header {
+    background-image: url(../images/header-main-image.png);
+    background-position: center;
+}
+
+#header #intro-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#logo img {
+    width: 150px;
+}
+
+#intro h1 {
+    margin-top: 0.75em;
+    font-weight: 300;
+    font-family: "Open Sans", "Helvetica Neue";
+}
+
+@media (min-width: 992px) {
+
+    #logo img {
+        width: 200px;
+    }
+}
