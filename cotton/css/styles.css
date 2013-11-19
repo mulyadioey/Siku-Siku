@@ -16,12 +16,12 @@ html,body,#page{width: 100%;height: 100%;margin: 0px;padding: 0px; -webkit-box-s
           box-sizing: border-box;}
 html{-webkit-font-smoothing: antialiased;}
 body {background: #fff; font-family: 'Cabin','Helvetica Neue';line-height: 1.2em;}   
-h1,h2,h3,h4,h5,h6{color: #f4594e;letter-spacing: -0.03em;font-weight: bold; font-weight: 900; font-family: 'Merriweather', Times, serif;}
+h1,h2,h3,h4,h5,h6{color: #02abe5;letter-spacing: -0.03em;font-weight: bold; font-weight: 900; font-family: 'Merriweather', Times, serif;}
 
-a{color: #f4594e; cursor:pointer;}
+a{color: #02abe5; cursor:pointer;}
 p{color: #4a4a4a;font-size: 1.125em;line-height: 1.5625em;}
-select{color: white;padding: 0 1em; height: 2.4em;outline: none;border: 0;border-radius: 0 !important;background: url('../images/arrow-down.png') no-repeat right 0.8em #f4594e;-webkit-appearance: none;}
-time{color:#f4594e;}
+select{color: white;padding: 0 1em; height: 2.4em;outline: none;border: 0;border-radius: 0 !important;background: url('../images/arrow-down.png') no-repeat right 0.8em #02abe5;-webkit-appearance: none;}
+time{color:#02abe5;}
 /* ==========================================================================
    helpers
    ========================================================================== */
@@ -70,7 +70,7 @@ height: 100%;
    Header Styles
    ========================================================================== */
 
-#header{overflow:hidden;height:auto;background: url('http://placehold.it/1920x1080/1a1a1a/F4594E&amptext=1920x1080') fixed no-repeat; height:100%;}
+#header{overflow:hidden;height:auto;background: url('http://placehold.it/1920x1080/1a1a1a/02abe5&amptext=1920x1080') fixed no-repeat; height:100%;}
 .no-touch #header{-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;background-attachment: fixed;}
 
 #logo{display:none;}
@@ -86,7 +86,7 @@ height: 100%;
 #explore {opacity:0;margin-top: 0em;}
 #explore a {text-decoration: none;}
 #explore a i{font-size:6em;margin:0 auto; color:white; cursor:pointer; color:white;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
-.touch #explore a i:hover,.no-touch #explore a i:hover{color:#f4594e;}
+.touch #explore a i:hover,.no-touch #explore a i:hover{color:#02abe5;}
 
 /* ==========================================================================
    Navigation Styles
@@ -97,12 +97,12 @@ height: 100%;
 #top-navigation li{width:100%; margin-bottom: 1em; }
 #top-navigation li a{text-decoration:none;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
 #top-navigation li:not(active) a{color:#fff;}
-#top-navigation li.active a, #top-navigation li:hover a{color:#f4594e;}
+#top-navigation li.active a, #top-navigation li:hover a{color:#02abe5;}
 
 #logo-lettering img{height: 3.125em;}
 
 #menu-mobile i{position:absolute;top:0.3em;right:0.6em; color: white; cursor:pointer;}
-#menu-mobile:hover i,#menu-mobile.active i{color:#f4594e;}
+#menu-mobile:hover i,#menu-mobile.active i{color:#02abe5;}
 
 /* ==========================================================================
    All Section Styles
@@ -192,11 +192,11 @@ section#studio{padding-bottom: 0;overflow:hidden;}
 .skills-bar li {position:relative;margin-bottom: 30px;height: 40px;background: #333;}
 .skills-bar li:last-child {margin-bottom: 0px;}
 .skills-bar li em {position: absolute;top: 10px;color:white;font-weight: bold;}
-.expand {position: absolute;left: 0;height: 40px;background: #f4594e;}
+.expand {position: absolute;left: 0;height: 40px;background: #02abe5;}
 
 /* Animations */
 .service:hover, .service.active{color: #1a1a1a;}
-.service:hover h5, .service.active h5{color: #f4594e;}
+.service:hover h5, .service.active h5{color: #02abe5;}
 
 /* ==========================================================================
    Work Styles
@@ -211,7 +211,7 @@ section#studio{padding-bottom: 0;overflow:hidden;}
 
 #work-filter{margin:0;margin-bottom: 0.5em;font-weight: bold;font-size: 1.3125em;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
 #work-filter li{cursor:pointer;}
-#work-filter li.active, #work-filter li:hover{color:#f4594e;}
+#work-filter li.active, #work-filter li:hover{color:#02abe5;}
 #work-filter ul {margin-bottom:2em;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
 #works select{margin-bottom: 2em;}
 
@@ -246,8 +246,8 @@ section#studio{padding-bottom: 0;overflow:hidden;}
 #twitter ul.tweetList {position: absolute;}
 #twitter ul.tweetList li {list-style:none;height: 10em;font-size: 1.25em;}
 #twitter ul.tweetList li p{font-size: 1em;}
-#tweet_loader{font-size: 2em;text-align: center; color:#f4594e;}
-#loading{color:#f4594e;}
+#tweet_loader{font-size: 2em;text-align: center; color:#02abe5;}
+#loading{color:#02abe5;}
 
 #instagram li{list-style: none;}
 #flickr .col-xs-3,#instagram .col-xs-3,#flickr .col-sm-2, #instagram .col-sm-2{margin: 0;padding: 0;}
@@ -267,7 +267,7 @@ input[type="text"], textarea{padding:0.6em;width: 100%;outline: none;border: non
 input[type="text"]:focus, textarea:focus{background: #e6e6e6; -webkit-transition: all 0.15s linear; -moz-transition: all 0.15s linear; transition: all 0.15s linear;}
 
 
-#contacts .btn{width:100%;margin-top:1em; border-radius:0; border:none; background-color: #f4594e; color: white;-webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;}
+#contacts .btn{width:100%;margin-top:1em; border-radius:0; border:none; background-color: #02abe5; color: white;-webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;}
 #contacts .btn:hover{background-color: #2a2a2a; color: white;}
 .formContainer{position: relative;}
 
@@ -286,7 +286,7 @@ span.valid{background-image:url("../images/notifications/valid.svg");}
 
 .contact-info {margin-top:2em;}
 .contact-info p{margin-top: 1em;font-size: 1em;}
-.contact-info .icon a i{text-decoration: none;color:#f4594e;}
+.contact-info .icon a i{text-decoration: none;color:#02abe5;}
 .contact-info .icon a:hover i{color:black;}
 
 .contact-label{color:#999;font-size: 1.5em;font-family: 'Cabin', sans-serif;}
